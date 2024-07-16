@@ -2,10 +2,29 @@ import Link from "next/link";
 
 import LogoSVG from "../../public/assets/newLogo.a1d35235.svg";
 import { BottomLine, HeaderContainer, HeaderDiv } from "../style";
+import { useState, useEffect } from "react";
 
 const NextDivHeader = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 50) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <HeaderContainer>
+    <HeaderContainer isSticky={isSticky}>
       <HeaderDiv>
         <a>프로젝트</a>
         <BottomLine />

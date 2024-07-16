@@ -1,4 +1,11 @@
 import styled from "@emotion/styled";
+import {
+  PretendardFont,
+  FontWeight,
+  FontSize,
+  LineHeight,
+  Colors,
+} from "../styles/fontStyles";
 
 export const Wrapper = styled.div<{ isVisible: boolean }>`
   position: fixed;
@@ -96,23 +103,21 @@ export const DesktopImage = styled.img`
 `;
 
 export const GameTopScheduleFont = styled.h1`
-  font-family: Pretendard;
-  font-style: normal;
-  font-weight: 700;
+  ${PretendardFont};
+  font-weight: ${FontWeight.bold};
   font-size: 28px;
   line-height: 39px;
-  color: white !important;
+  color: ${Colors.white} !important;
   text-align: center;
   height: 78px;
   span {
-    color: #ff6c7a !important;
+    color: ${Colors.highlightRed} !important;
   }
 `;
 export const GameTopScheduleBtn = styled.a`
   z-index: 10;
-  font-family: Pretendard;
-  font-style: normal;
-  font-weight: 600;
+  ${PretendardFont}
+  font-weight: ${FontWeight.semiBold};
   font-size: 16px;
   line-height: 26px;
   color: #141617;
@@ -183,7 +188,7 @@ export const InfoValue = styled.div`
   font-size: 14px;
   line-height: 22px;
   width: 52px;
-  color: rgb(129, 137, 143) !important;
+  color: ${Colors.darkGray}; !important;
 `;
 
 export const InfoValue2 = styled.div`
@@ -192,8 +197,8 @@ export const InfoValue2 = styled.div`
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  color: #141617;
-  color: #d7e0e6 !important;
+
+  color: ${Colors.lightGray} !important;
   display: flex;
   flex-direction: column;
   gap: 2px;
