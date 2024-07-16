@@ -5,15 +5,15 @@ import {
   GameTopScheduleDiv,
   GameTopScheduleFont,
   GameTopSection,
+  GridContainer,
   HeaderContainer,
   Logo,
-  MobileImageDiv,
   Wrapper,
 } from "./style";
 import Image from "next/image";
 import LogoSVG from "../public/assets/newLogo.a1d35235.svg";
 import Header from "./components/Header";
-import { FC } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { MobileImage, DesktopImage } from "./style";
 import Slider from "./components/Slider";
 import Info from "./components/Info";
@@ -29,10 +29,12 @@ const GameTop = () => {
     <div>
       <Header />
       <GameTopSection>
-        <MobileImage
-          src={"/assets/hero_pc_grid.png"}
-          alt={"/assets/hero_pc_grid"}
-        />
+        <GridContainer>
+          <MobileImage
+            src={"/assets/hero_mo_grid.png"}
+            alt={"/assets/hero_mo_grid"}
+          />
+        </GridContainer>
         <GameTopScheduleDiv>
           <GameHeroLogo
             src={"/assets/game_hero_logos.png"}

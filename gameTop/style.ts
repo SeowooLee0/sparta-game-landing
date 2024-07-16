@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ isVisible: boolean }>`
   position: fixed;
   height: fit-content;
-  display: flex;
+  display: ${({ isVisible }) => (isVisible ? "flex" : "none")};
   background-color: white;
   width: 100%;
   padding-top: 0px;
@@ -40,29 +40,18 @@ export const Logo = styled.div`
   height: 40px;
 `;
 
-export const MobileImageDiv = styled.div`
-       display: flex;
-    overflow: hidden;
-    margin-top: 55px;
-}
-`;
-
 export const MobileImage = styled.img`
-  display: flex;
-  position: absolute;
-  bottom: 77px;
-  left: 50%;
-  transform: translate(-50%, 0);
   width: 1024px;
   aspect-ratio: auto 1024 / 656;
   height: 656px;
+}
 `;
 
 export const GameTopSection = styled.section`
   background: radial-gradient(
     159.82% 159.82% at 50% 166.08%,
-    #6d77cf 0%,
-    #141617 85.5%
+    rgb(109, 119, 207) 0%,
+    rgb(20, 22, 23) 85.5%
   );
   z-index: 0;
   overflow: hidden;
@@ -73,7 +62,6 @@ export const GameTopSection = styled.section`
 `;
 
 export const GameTopScheduleDiv = styled.div`
-  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -83,6 +71,14 @@ export const GameTopScheduleDiv = styled.div`
   gap: 12px;
   margin: 0;
   padding: 0;
+`;
+
+export const GridContainer = styled.div`
+  display: flex;
+  position: absolute;
+  bottom: 77px;
+  left: 50%;
+  transform: translate(-50%, 0px);
 `;
 
 export const GameHeroLogo = styled.img`
