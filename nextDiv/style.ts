@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div<{ isSticky: boolean }>`
     overflow-x: scroll;
     padding: 10px 16px 0 16px;
 
-      top: ${({ isSticky }) => (isSticky ? "0" : "50px")};
+    top: ${({ isSticky }) => (isSticky ? "0" : "50px")};
     z-index: 20;
     &::-webkit-scrollbar {
     display: none;

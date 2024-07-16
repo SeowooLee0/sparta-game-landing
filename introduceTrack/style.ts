@@ -1,8 +1,175 @@
 import styled from "@emotion/styled";
 
-export const VideoDetailInfo = styled.section`
-  transform: translateY(-60px);
+export const IntroduceTrackB = styled.section`
+  background-color: #141617;
+  padding: 80px 0;
+  width: 100%;
+`;
+
+export const IntroduceTrackSection = styled.section`
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 328px;
+`;
+
+export const IntroduceTitleDiv = styled.div`
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ff6c7a !important;
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
+`;
+
+export const IntroduceTitleH3 = styled.h3`
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: white !important;
+  text-align: center;
+`;
+
+export const IntroducetInfoH4 = styled.h4`
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: white !important;
+  text-align: center;
+  margin: 8px 0 16px 0;
+`;
+
+export const IntroduceGrowthImageH3 = styled.h3`
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: white !important;
+  position: relative;
+  text-align: center;
+  width: 328px;
+  height: 245px;
+`;
+export const IntroduceGrowthImage = styled.img`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+  color: transparent;
+`;
+
+export const IntroduceGrowthSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+`;
+
+export const IntroduceGrowthDiv = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+`;
+
+export const IntroduceGrowhText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const IntroduceGrowhTextB = styled.h5`
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: white !important;
+  margin-bottom: 16px;
+  text-align: left;
+`;
+
+export const IntroduceGameCareerText = styled.h5`
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: white !important;
+`;
+
+export const IntroduceGrowhTextS = styled.p`
+  color: white !important;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  margin: 0;
+  opacity: 0.7;
+`;
+
+export const IntroduceCareerPathBoxSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+`;
+
+export const IntroduceCareerPathBox = styled.div`
+  display: flex;
+  width: 100%;
+  gap: 14px;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const IntroduceCareerPathInnerBox = styled.div`
+  width: 280px;
+  flex-shrink: 0;
+  padding: 24px;
+  border-radius: 12px;
+  background: #25282a;
+`;
+
+export const IntroduceCareerPathInnerBoxTitle = styled.div`
+  margin: 0 0 4px;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: white !important;
+`;
+
+export const IntroduceCareerPathInnerBoxText = styled.div`
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: white !important;
+  opacity: 0.7;
+`;
+
+export const IntroduceCareerPathInnerBoxIcon = styled.img`
+  width: 56px;
+  height: 56px;
+  padding-top: 0;
+  border-radius: 5.6px;
+  overflow: hidden;
+  margin-bottom: 12px;
 `;
