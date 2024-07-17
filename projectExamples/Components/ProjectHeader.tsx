@@ -1,6 +1,3 @@
-import Link from "next/link";
-
-import LogoSVG from "../../public/assets/newLogo.a1d35235.svg";
 import { BottomLine, HeaderContainer, HeaderDiv } from "../style";
 import { useState, useEffect } from "react";
 

@@ -1,7 +1,8 @@
-import Curriculum from "@/curriculum/Curriculum";
-import GameTop from "@/gameTop/GameTop";
-import IntroduceTrack from "@/introduceTrack/IntroduceTrack";
-import ProjectExamples from "@/projectExamples/ProjectExamples";
+import CurriculumTemplate from "@/curriculum/template";
+import Curriculum from "@/curriculum/template";
+import GameTop from "@/gameTop/template";
+import IntroduceTrack from "@/introduceTrack/template";
+import ProjectExamples from "@/projectExamples/template";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <GameTop />
       <ProjectExamples />
       <IntroduceTrack />
-      <Curriculum />
+      <CurriculumTemplate />
     </div>
   );
 }

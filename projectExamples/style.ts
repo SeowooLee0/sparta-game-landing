@@ -55,14 +55,14 @@ export const BottomLine = styled.div`
 }
 `;
 
-export const ProjectTopSec = styled.section`
+export const TopSec = styled.section`
    background-color: #141617;
     padding: 80px 0;
     width: 100%;
 }
 `;
 
-export const ProjectTopSecSec = styled.section`
+export const TopSecSec = styled.section`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ export const ProjectTopSecSec = styled.section`
 }
 `;
 
-export const ProjectTopInfoDiv = styled.div`
+export const TopInfoDiv = styled.div`
     font-family: Pretendard;
     font-style: normal;
     font-weight: 600;
@@ -85,7 +85,7 @@ export const ProjectTopInfoDiv = styled.div`
 }
 `;
 
-export const ProjectTopInfoH3 = styled.h3`
+export const TopInfoH3 = styled.h3`
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
@@ -95,7 +95,7 @@ export const ProjectTopInfoH3 = styled.h3`
 }
 `;
 
-export const ProjectInfoH4 = styled.h4`
+export const InfoH4 = styled.h4`
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
@@ -106,7 +106,7 @@ export const ProjectInfoH4 = styled.h4`
 }
 `;
 
-export const ProjectInfoDetail = styled.p`
+export const InfoDetail = styled.p`
  font-family: Pretendard;
     font-style: normal;
     font-weight: 400;
@@ -117,7 +117,7 @@ export const ProjectInfoDetail = styled.p`
 }
 `;
 
-export const ProjectImgSection = styled.section`
+export const ImgSection = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,14 +125,14 @@ export const ProjectImgSection = styled.section`
 }
 `;
 
-export const ProjectImg1 = styled.img`
+export const Img1 = styled.img`
     width: 328px;
     aspect-ratio: auto 328 / 234;
     height: 234px;
 }
 `;
 
-export const ProjectImg1Info = styled.p`
+export const Img1Info = styled.p`
     font-family: Pretendard;
     font-style: normal;
     font-weight: 600;
@@ -145,7 +145,7 @@ export const ProjectImg1Info = styled.p`
 }
 `;
 
-export const ProjectSection = styled.section`
+export const Section = styled.section`
     padding: 80px 0;
     display: flex;
     justify-content: center;
@@ -158,7 +158,7 @@ export const ProjectSection = styled.section`
 
 `;
 
-export const ProjectSecSec = styled.section`
+export const SecSec = styled.section`
     width: 100%;
     min-width: 328px;
     max-width: 600px;
@@ -173,14 +173,14 @@ export const ProjectSecSec = styled.section`
 }
 `;
 
-export const ProjectInfoSec = styled.section`
+export const InfoSec = styled.section`
     display: flex;
     justify-content: center;
 
 }
 `;
 
-export const ProjectDetailSec = styled.section`
+export const DetailSec = styled.section`
     display: block;
     unicode-bidi: isolate;
     display: flex;
@@ -188,13 +188,13 @@ export const ProjectDetailSec = styled.section`
 }
 `;
 
-export const ProjectDetailSecSec = styled.section`
+export const DetailSecSec = styled.section`
     width: 100%;
     height: auto;
 }
 `;
 
-export const ProjectDetailVideoDiv = styled.div`
+export const DetailVideoDiv = styled.div`
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -208,12 +208,7 @@ export const ProjectDetailVideoDiv = styled.div`
 }
 `;
 
-export const VscController = styled.div`
-  user-select: none;
-  white-space: normal;
-`;
-
-export const ProjectDetailVideo = styled.video`
+export const DetailVideo = styled.video`
   position: absolute;
   top: 0;
   right: 0;
@@ -280,7 +275,7 @@ export const ViedoDetailSkillImage = styled.img`
   height: 30px;
 `;
 
-export const ProjectToggle = styled.div`
+export const Toggle = styled.div`
   border-radius: 12px;
   background: #25282a;
   height: fit-content;
@@ -291,7 +286,7 @@ export const ProjectToggle = styled.div`
   cursor: pointer;
 `;
 
-export const ProjectToggleDiv = styled.div`
+export const ToggleDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;

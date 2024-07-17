@@ -1,39 +1,25 @@
-import {
-  EarlyBirdTimer,
-  EarlyBirdTimerBtnSection,
-  EarlyBirdTimerBtnSvg,
-  EarlyBirdTimerImg,
-  EarlyBirdTimerImgText,
-  EarlyBirdTimerImgTitle,
-  EarlyBirdTimerSection,
-  EarlyBirdTimerSectionDiv,
-} from "../style";
-
-interface SvgProps {
-  width?: string;
-  height?: string;
-}
+import * as S from "../style";
 
 export default function EarlyBirdWithTimer() {
   return (
     <>
-      <EarlyBirdTimer>
-        <EarlyBirdTimerSection>
-          <EarlyBirdTimerSectionDiv>
-            <EarlyBirdTimerImg
+      <S.EarlyBirdTimer>
+        <S.EarlyBirdTimerSection>
+          <S.EarlyBirdTimerSectionDiv>
+            <S.EarlyBirdTimerImg
               src={"/assets/event.png"}
               alt={"/assets/eentv.png"}
             />
-            <EarlyBirdTimerImgTitle>기간 한정 혜택</EarlyBirdTimerImgTitle>
-            <EarlyBirdTimerImgText>
+            <S.EarlyBirdTimerImgTitle>기간 한정 혜택</S.EarlyBirdTimerImgTitle>
+            <S.EarlyBirdTimerImgText>
               이번주에 종료되는
               <br />
               혜택이 있어요!
-            </EarlyBirdTimerImgText>
-          </EarlyBirdTimerSectionDiv>
-          <EarlyBirdTimerBtnSection>
+            </S.EarlyBirdTimerImgText>
+          </S.EarlyBirdTimerSectionDiv>
+          <S.EarlyBirdTimerBtnSection>
             혜택 자세히 보기
-            <EarlyBirdTimerBtnSvg
+            <S.EarlyBirdTimerBtnSvg
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
               id="earlyBirdWithTimer_section56_abb_svg00"
@@ -46,10 +32,10 @@ export default function EarlyBirdWithTimer() {
                 strokeLinejoin="round"
                 id="earlyBirdWithTimer_section56_abb_svg00_path00"
               ></path>
-            </EarlyBirdTimerBtnSvg>
-          </EarlyBirdTimerBtnSection>
-        </EarlyBirdTimerSection>
-      </EarlyBirdTimer>
+            </S.EarlyBirdTimerBtnSvg>
+          </S.EarlyBirdTimerBtnSection>
+        </S.EarlyBirdTimerSection>
+      </S.EarlyBirdTimer>
     </>
   );
 }

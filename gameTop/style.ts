@@ -54,7 +54,53 @@ export const MobileImage = styled.img`
 }
 `;
 
-export const GameTopSection = styled.section`
+export const SliderContainer = styled.div`
+  display: flex;
+  overflow: hidden;
+  margin-top: 55px;
+  height: fit-content;
+`;
+
+export const Slides = styled.ul`
+  position: absolute;
+  display: flex;
+  width: max-content;
+  animation: aniScroll 12s linear infinite;
+
+  @keyframes aniScroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+`;
+
+export const Slides2 = styled.ul`
+  position: absolute;
+  display: flex;
+  width: max-content;
+  animation: aniScroll2 12s linear infinite;
+
+  @keyframes aniScroll2 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+`;
+
+export const Slide = styled.img`
+  width: 135px;
+  aspect-ratio: auto 135 / 141;
+  height: 141px;
+  margin-right: 7px;
+`;
+
+export const Section = styled.section`
   background: radial-gradient(
     159.82% 159.82% at 50% 166.08%,
     rgb(109, 119, 207) 0%,
@@ -68,7 +114,7 @@ export const GameTopSection = styled.section`
   height: 733px;
 `;
 
-export const GameTopScheduleDiv = styled.div`
+export const ScheduleDiv = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -102,7 +148,7 @@ export const DesktopImage = styled.img`
   }
 `;
 
-export const GameTopScheduleFont = styled.h1`
+export const ScheduleFont = styled.h1`
   ${PretendardFont};
   font-weight: ${FontWeight.bold};
   font-size: 28px;
@@ -114,7 +160,7 @@ export const GameTopScheduleFont = styled.h1`
     color: ${Colors.highlightRed} !important;
   }
 `;
-export const GameTopScheduleBtn = styled.a`
+export const ScheduleBtn = styled.a`
   z-index: 10;
   ${PretendardFont}
   font-weight: ${FontWeight.semiBold};
@@ -139,7 +185,7 @@ export const GameTopScheduleBtn = styled.a`
   margin-top: 8px;
 `;
 
-export const GameTopScheduleInfo = styled.div`
+export const ScheduleInfo = styled.div`
   height: fit-content;
   width: 100%;
   box-sizing: border-box;
@@ -150,7 +196,7 @@ export const GameTopScheduleInfo = styled.div`
   unicode-bidi: isolate;
 `;
 
-export const GameTopScheduleInfoDive = styled.div`
+export const ScheduleInfoDive = styled.div`
   background: rgba(20, 22, 23, 0.64);
   backdrop-filter: blur(8px);
   display: flex;

@@ -1,8 +1,7 @@
 // components/Header.tsx
-import Link from "next/link";
-import { HeaderContainer, Logo, Wrapper } from "../style";
 import LogoSVG from "../../public/assets/newLogo.a1d35235.svg";
 import { useEffect, useState } from "react";
+import * as S from "../style";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -23,13 +22,13 @@ const Header = () => {
   }, []);
 
   return (
-    <Wrapper isVisible={isVisible}>
-      <HeaderContainer>
-        <Logo>
+    <S.Wrapper isVisible={isVisible}>
+      <S.HeaderContainer>
+        <S.Logo>
           <LogoSVG />
-        </Logo>
-      </HeaderContainer>
-    </Wrapper>
+        </S.Logo>
+      </S.HeaderContainer>
+    </S.Wrapper>
   );
 };
 

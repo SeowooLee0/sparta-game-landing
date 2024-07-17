@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 
-export const IntroduceTrackB = styled.section`
+export const TrackB = styled.section`
   background-color: #141617;
   padding: 80px 0;
   width: 100%;
 `;
 
-export const IntroduceTrackSection = styled.section`
+export const TrackSection = styled.section`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ export const IntroduceTrackSection = styled.section`
   max-width: 328px;
 `;
 
-export const IntroduceTitleDiv = styled.div`
+export const TitleDiv = styled.div`
   font-family: Pretendard;
   font-style: normal;
   font-weight: 600;
@@ -29,7 +29,7 @@ export const IntroduceTitleDiv = styled.div`
   text-align: center;
 `;
 
-export const IntroduceTitleH3 = styled.h3`
+export const TitleH3 = styled.h3`
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
@@ -37,7 +37,7 @@ export const IntroduceTitleH3 = styled.h3`
   text-align: center;
 `;
 
-export const IntroducetInfoH4 = styled.h4`
+export const InfoH4 = styled.h4`
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
@@ -46,7 +46,7 @@ export const IntroducetInfoH4 = styled.h4`
   margin: 8px 0 16px 0;
 `;
 
-export const IntroduceGrowthImageH3 = styled.h3`
+export const GrowthImageH3 = styled.h3`
   font-family: Pretendard;
   font-style: normal;
   font-weight: 700;
@@ -58,7 +58,7 @@ export const IntroduceGrowthImageH3 = styled.h3`
   width: 328px;
   height: 245px;
 `;
-export const IntroduceGrowthImage = styled.img`
+export const GrowthImage = styled.img`
   position: absolute;
   height: 100%;
   width: 100%;
@@ -66,7 +66,7 @@ export const IntroduceGrowthImage = styled.img`
   color: transparent;
 `;
 
-export const IntroduceGrowthSection = styled.section`
+export const GrowthSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,19 +74,19 @@ export const IntroduceGrowthSection = styled.section`
   width: 100%;
 `;
 
-export const IntroduceGrowthDiv = styled.div`
+export const GrowthDiv = styled.div`
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
 `;
 
-export const IntroduceGrowhText = styled.div`
+export const GrowthText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
 
-export const IntroduceGrowhTextB = styled.h5`
+export const GrowthTextB = styled.h5`
   font-family: Pretendard;
   font-style: normal;
   font-weight: 700;
@@ -97,7 +97,7 @@ export const IntroduceGrowhTextB = styled.h5`
   text-align: left;
 `;
 
-export const IntroduceGameCareerText = styled.h5`
+export const GameCareerText = styled.h5`
   font-family: Pretendard;
   font-style: normal;
   font-weight: 700;
@@ -106,7 +106,7 @@ export const IntroduceGameCareerText = styled.h5`
   color: white !important;
 `;
 
-export const IntroduceGrowhTextS = styled.p`
+export const GrowthTextS = styled.p`
   color: white !important;
   font-family: Pretendard;
   font-style: normal;
@@ -118,7 +118,7 @@ export const IntroduceGrowhTextS = styled.p`
   opacity: 0.7;
 `;
 
-export const IntroduceCareerPathBoxSection = styled.div`
+export const CareerPathBoxSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@ export const IntroduceCareerPathBoxSection = styled.div`
   width: 100%;
 `;
 
-export const IntroduceCareerPathBox = styled.div`
+export const CareerPathBox = styled.div`
   display: flex;
   width: 100%;
   gap: 14px;
@@ -137,7 +137,7 @@ export const IntroduceCareerPathBox = styled.div`
   }
 `;
 
-export const IntroduceCareerPathInnerBox = styled.div`
+export const CareerPathInnerBox = styled.div`
   width: 280px;
   flex-shrink: 0;
   padding: 24px;
@@ -145,7 +145,7 @@ export const IntroduceCareerPathInnerBox = styled.div`
   background: #25282a;
 `;
 
-export const IntroduceCareerPathInnerBoxTitle = styled.div`
+export const CareerPathInnerBoxTitle = styled.div`
   margin: 0 0 4px;
   font-family: Pretendard;
   font-style: normal;
@@ -155,7 +155,7 @@ export const IntroduceCareerPathInnerBoxTitle = styled.div`
   color: white !important;
 `;
 
-export const IntroduceCareerPathInnerBoxText = styled.div`
+export const CareerPathInnerBoxText = styled.div`
   font-family: Pretendard;
   font-style: normal;
   font-weight: 400;
@@ -165,7 +165,7 @@ export const IntroduceCareerPathInnerBoxText = styled.div`
   opacity: 0.7;
 `;
 
-export const IntroduceCareerPathInnerBoxIcon = styled.img`
+export const CareerPathInnerBoxIcon = styled.img`
   width: 56px;
   height: 56px;
   padding-top: 0;
