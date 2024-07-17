@@ -1,3 +1,4 @@
+import EarlyBirdWithTimer from "./components/EarlyBirdWithTimer";
 import {
   IntroduceTrackSection,
   IntroduceTrackB,
@@ -151,6 +152,7 @@ const IntroduceTrack = () => {
           </IntroduceCareerPathBoxSection>
         </IntroduceTrackSection>
       </IntroduceTrackB>
+      <EarlyBirdWithTimer />
     </div>
   );
 };

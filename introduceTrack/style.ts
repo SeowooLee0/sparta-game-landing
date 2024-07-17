@@ -173,3 +173,80 @@ export const IntroduceCareerPathInnerBoxIcon = styled.img`
   overflow: hidden;
   margin-bottom: 12px;
 `;
+
+export const EarlyBirdTimer = styled.section`
+  padding: 0 0 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0f16ae 0%, #031d44 100%);
+`;
+
+export const EarlyBirdTimerSection = styled.section`
+  width: 100%;
+  min-width: 328px;
+  max-width: 600px;
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+`;
+
+export const EarlyBirdTimerSectionDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const EarlyBirdTimerImg = styled.img`
+  width: 288px;
+  aspect-ratio: auto 288 / 184;
+  height: 184px;
+`;
+
+export const EarlyBirdTimerImgTitle = styled.h4`
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #80c2ff !important;
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
+`;
+export const EarlyBirdTimerImgText = styled.h1`
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff !important;
+  text-align: center;
+`;
+export const EarlyBirdTimerBtnSection = styled.a`
+  display: flex;
+  width: 240px;
+  min-width: 100px;
+  padding: 13px 20px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  border: 1px solid #e4ebf0;
+  background: #fff;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: #3a3e41 !important;
+`;
+
+export const EarlyBirdTimerBtnSvg = styled.svg`
+  width: 20px;
+  height: 20px;
+  fill: none;
+`;
