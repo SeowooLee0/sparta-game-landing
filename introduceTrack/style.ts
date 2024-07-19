@@ -1,7 +1,8 @@
+import { Colors, CommonFont } from "@/styles/fontStyles";
 import styled from "@emotion/styled";
 
 export const TrackB = styled.section`
-  background-color: #141617;
+  background-color: ${Colors.black};
   padding: 80px 0;
   width: 100%;
 `;
@@ -18,8 +19,7 @@ export const TrackSection = styled.section`
 `;
 
 export const TitleDiv = styled.div`
-  font-family: Pretendard;
-  font-style: normal;
+  ${CommonFont}
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -33,7 +33,7 @@ export const TitleH3 = styled.h3`
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
-  color: white !important;
+  color: ${Colors.white} !important;
   text-align: center;
 `;
 
@@ -41,18 +41,17 @@ export const InfoH4 = styled.h4`
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
-  color: white !important;
+  color: ${Colors.white} !important;
   text-align: center;
   margin: 8px 0 16px 0;
 `;
 
 export const GrowthImageH3 = styled.h3`
-  font-family: Pretendard;
-  font-style: normal;
+  ${CommonFont};
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
-  color: white !important;
+  color: ${Colors.white} !important;
   position: relative;
   text-align: center;
   width: 328px;
@@ -87,12 +86,11 @@ export const GrowthText = styled.div`
 `;
 
 export const GrowthTextB = styled.h5`
-  font-family: Pretendard;
-  font-style: normal;
+  ${CommonFont};
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  color: white !important;
+  color: ${Colors.white} !important;
   margin-bottom: 16px;
   text-align: left;
 `;
@@ -103,13 +101,12 @@ export const GameCareerText = styled.h5`
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  color: white !important;
+  color: ${Colors.white} !important;
 `;
 
 export const GrowthTextS = styled.p`
-  color: white !important;
-  font-family: Pretendard;
-  font-style: normal;
+  ${CommonFont};
+  color: ${Colors.white} !important;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -146,9 +143,9 @@ export const CareerPathInnerBox = styled.div`
 `;
 
 export const CareerPathInnerBoxTitle = styled.div`
+  ${CommonFont};
   margin: 0 0 4px;
-  font-family: Pretendard;
-  font-style: normal;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -206,8 +203,7 @@ export const EarlyBirdTimerImg = styled.img`
 `;
 
 export const EarlyBirdTimerImgTitle = styled.h4`
-  font-family: Pretendard;
-  font-style: normal;
+  ${CommonFont};
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -217,12 +213,11 @@ export const EarlyBirdTimerImgTitle = styled.h4`
   text-align: center;
 `;
 export const EarlyBirdTimerImgText = styled.h1`
-  font-family: Pretendard;
-  font-style: normal;
+  ${CommonFont};
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
-  color: #fff !important;
+  color: ${Colors.white} !important;
   text-align: center;
 `;
 export const EarlyBirdTimerBtnSection = styled.a`
@@ -236,12 +231,11 @@ export const EarlyBirdTimerBtnSection = styled.a`
   gap: 6px;
   border-radius: 8px;
   border: 1px solid #e4ebf0;
-  background: #fff;
+  background: #${Colors.white};
   font-family: Pretendard;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-
   color: #3a3e41 !important;
 `;
 

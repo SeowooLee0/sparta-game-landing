@@ -1,56 +1,13 @@
 import styled from "@emotion/styled";
-import {
-  PretendardFont,
-  FontWeight,
-  FontSize,
-  LineHeight,
-  Colors,
-} from "../styles/fontStyles";
-
-export const Wrapper = styled.div<{ isVisible: boolean }>`
-  position: fixed;
-  height: fit-content;
-  display: ${({ isVisible }) => (isVisible ? "flex" : "none")};
-  background-color: white;
-  width: 100%;
-  padding-top: 0px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 0px;
-  border-bottom: 1px solid #e4ebf0;
-
-  justify-content: space-around;
-  z-index: 21;
-  @media (min-width: 1024px) {
-  }
-`;
-
-export const HeaderContainer = styled.div`
-  display: flex;
-  color: white;
-  height: 50px;
-  width: 100%;
-
-  @media (min-width: 1024px) {
-    height: 60px;
-    max-width: 1200px;
-    padding-top: 0px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 0px;
-  }
-`;
-
-export const Logo = styled.div`
-  margin-top: 3px;
-  width: 134px;
-  height: 40px;
-`;
+import { CommonFont, FontWeight, Colors } from "../styles/fontStyles";
 
 export const MobileImage = styled.img`
   width: 1024px;
   aspect-ratio: auto 1024 / 656;
   height: 656px;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 `;
 
@@ -75,6 +32,9 @@ export const Slides = styled.ul`
       transform: translateX(-100%);
     }
   }
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const Slides2 = styled.ul`
@@ -90,6 +50,9 @@ export const Slides2 = styled.ul`
     100% {
       transform: translateX(0%);
     }
+  }
+  @media (min-width: 1024px) {
+    display: none;
   }
 `;
 
@@ -122,8 +85,6 @@ export const ScheduleDiv = styled.div`
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin: 0;
-  padding: 0;
 `;
 
 export const GridContainer = styled.div`
@@ -132,6 +93,12 @@ export const GridContainer = styled.div`
   bottom: 77px;
   left: 50%;
   transform: translate(-50%, 0px);
+  @media (min-width: 1024px) {
+    position: absolute;
+    height: 289px;
+    mid-width: 1440px;
+    gap: 20px;
+  }
 `;
 
 export const GameHeroLogo = styled.img`
@@ -149,7 +116,6 @@ export const DesktopImage = styled.img`
 `;
 
 export const ScheduleFont = styled.h1`
-  ${PretendardFont};
   font-weight: ${FontWeight.bold};
   font-size: 28px;
   line-height: 39px;
@@ -159,30 +125,38 @@ export const ScheduleFont = styled.h1`
   span {
     color: ${Colors.highlightRed} !important;
   }
+
+  @media (min-width: 1024px) {
+    height: 140px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 140%;
+    margin-top: 0px;
+  }
 `;
 export const ScheduleBtn = styled.a`
-  z-index: 10;
-  ${PretendardFont}
+  ${CommonFont}
   font-weight: ${FontWeight.semiBold};
   font-size: 16px;
   line-height: 26px;
-  color: #141617;
   border-radius: 8px;
-  background: #e8344e;
-  color: #ffffff !important;
-
+  background: ${Colors.red};
+  color: ${Colors.white} !important;
   display: flex;
   width: 164px;
   height: 54px;
-  padding: 16px 20px;
-
+  margin: 16px 20px;
   justify-content: center;
-
   align-items: center;
   gap: 10px;
-
   flex-shrink: 0;
   margin-top: 8px;
+
+  @media (min-width: 1024px) {
+    width: 212px;
+    height: 56px;
+    margin: 16px 20px;
+  }
 `;
 
 export const ScheduleInfo = styled.div`
@@ -238,8 +212,7 @@ export const InfoValue = styled.div`
 `;
 
 export const InfoValue2 = styled.div`
-  font-family: Pretendard;
-  font-style: normal;
+  ${CommonFont}
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;

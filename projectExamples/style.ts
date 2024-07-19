@@ -1,3 +1,4 @@
+import { Colors, CommonFont } from "@/styles/fontStyles";
 import styled from "@emotion/styled";
 
 export const HeaderContainer = styled.div<{ isSticky: boolean }>`
@@ -6,8 +7,8 @@ export const HeaderContainer = styled.div<{ isSticky: boolean }>`
     align-items: center;
     justify-content: center;
     gap: 2px;
-    border-bottom: 1px solid #D7E0E6;
-    background-color: #FFFFFF;
+    border-bottom: 1px solid ${Colors.lightGray};
+    background-color:${Colors.white};
     overflow-x: scroll;
     padding: 10px 16px 0 16px;
 
@@ -26,18 +27,16 @@ export const HeaderDiv = styled.div`
     align-items: center;
     gap: 10px;
     a {
+      ${CommonFont};
         white-space: nowrap;
         display: flex;
         padding: 6px 10px;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        font-family: Pretendard;
-        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
-        color: #141617;
         color: #9DA7AE;
         transition: all 0.3s ease-in-out;
         border-radius: 10px;
@@ -49,14 +48,14 @@ export const HeaderDiv = styled.div`
 export const BottomLine = styled.div`
     width: 100%;
     height: 2px;
-    background-color: #FF6C7A;
+    background-color: ${Colors.highlightRed};
     opacity: 0; 
     transition: opacity 0.3s ease-in-out;
 }
 `;
 
 export const TopSec = styled.section`
-   background-color: #141617;
+   background-color: ${Colors.black};
     padding: 80px 0;
     width: 100%;
 }
@@ -73,12 +72,11 @@ export const TopSecSec = styled.section`
 `;
 
 export const TopInfoDiv = styled.div`
-    font-family: Pretendard;
-    font-style: normal;
+    ${CommonFont};
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    color: #FF6C7A !important;
+    color: ${Colors.highlightRed}!important;
     display: block;
     margin-bottom: 8px;
     text-align: center;
@@ -89,7 +87,7 @@ export const TopInfoH3 = styled.h3`
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
-    color: white !important;
+    color: ${Colors.white} !important;
     text-align: center;
     
 }
@@ -99,7 +97,7 @@ export const InfoH4 = styled.h4`
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
-    color: white !important;
+    color: ${Colors.white}  !important;
     text-align: center;
     margin: 8px 0 16px 0;
     
@@ -133,12 +131,10 @@ export const Img1 = styled.img`
 `;
 
 export const Img1Info = styled.p`
-    font-family: Pretendard;
-    font-style: normal;
+   ${CommonFont};
     font-weight: 600;
     font-size: 16px;
     line-height: 26px;
-    color: #141617;
     color: #F2F6F8 !important;
     margin-top: 40px;
     text-align: center;
@@ -150,9 +146,8 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #141617;
+    background-color: ${Colors.black};
     overflow: hidden !important;
-    -webkit-box-align: center;
     flex-direction: row;
 }
 
@@ -162,10 +157,7 @@ export const SecSec = styled.section`
     width: 100%;
     min-width: 328px;
     max-width: 600px;
-    margin-top: 0px;
-    margin-right: 16px;
-    margin-bottom: 0px;
-    margin-left: 16px;
+    margin: 0px 16px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -182,7 +174,6 @@ export const InfoSec = styled.section`
 
 export const DetailSec = styled.section`
     display: block;
-    unicode-bidi: isolate;
     display: flex;
     flex-direction: column;
 }
@@ -241,26 +232,23 @@ export const ViedoDetailDivTitle = styled.div`
   flex-direction: column;
   gap: 8px;
   p {
-    font-family: Pretendard;
-    font-style: normal;
+    ${CommonFont};
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
-    color: #ff6c7a !important;
+    color: ${Colors.highlightRed} !important;
   }
   h2 {
-    font-family: Pretendard;
-    font-style: normal;
+    ${CommonFont};
     font-weight: 600;
     font-size: 20px;
     line-height: 26px;
-    color: #fff !important;
+    color: ${Colors.white} !important;
   }
 `;
 
 export const ViedoDetailDivTitleP2 = styled.div`
-  font-family: Pretendard;
-  font-style: normal;
+  ${CommonFont};
   font-weight: 500;
   font-size: 13px;
   line-height: 21px;
@@ -287,14 +275,12 @@ export const Toggle = styled.div`
 `;
 
 export const ToggleDiv = styled.div`
+  ${CommonFont};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Pretendard;
-  font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 21px;
-  color: #141617;
-  color: #e4ebf0 !important;
+  color: ${Colors.bottomLine} !important;
 `;

@@ -1,9 +1,5 @@
+import { Colors, CommonFont } from "@/styles/fontStyles";
 import styled from "@emotion/styled";
-
-const commonStyles = {
-  fontFamily: "Pretendard",
-  fontStyle: "normal",
-};
 
 export const B = styled.section`
   background-color: #f6f9fa;
@@ -18,21 +14,21 @@ export const Section = styled.section`
 `;
 
 export const Span = styled.span`
-  ${commonStyles};
+  ${CommonFont};
   display: block;
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-  color: #ff6c7a !important;
+  color: ${Colors.highlightRed} !important;
   text-align: center;
 `;
 
 export const H1 = styled.h1`
-  ${commonStyles};
+  ${CommonFont};
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
-  color: #141617;
+  color: ${Colors.black};
   text-align: center;
   padding: 8px 0 40px;
   white-space: pre-wrap;
@@ -44,7 +40,7 @@ export const ExampleStackBox = styled.div`
 `;
 
 export const ExampleStackDetail = styled.div`
-  ${commonStyles};
+  ${CommonFont};
   display: flex;
   gap: 8px;
   align-items: flex-start;
@@ -56,12 +52,12 @@ export const ExampleStackDetail = styled.div`
 `;
 
 export const ExampleStackText = styled.div`
-  ${commonStyles};
+  ${CommonFont};
   background-color: #fff1f4;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  color: #e8344e !important;
+  color: ${Colors.red} !important;
   border-radius: 4px;
   padding: 2px 6px;
   width: fit-content;
@@ -92,7 +88,7 @@ export const ToggleBoxContainer = styled.div`
   min-width: 328px;
   max-width: 600px;
   padding: 16px 20px;
-  background-color: #ffffff;
+  background-color: ${Colors.white};
   border: 1px solid #e4ebf0;
   box-shadow: 0 8px 24px rgba(129, 137, 143, 0.12);
   border-radius: 12px;
@@ -109,25 +105,25 @@ export const ToggleBoxWrapper = styled.div`
 `;
 
 export const ToggleBoxTextNumber = styled.p`
-  ${commonStyles};
+  ${CommonFont};
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #e8344e !important;
+  color: ${Colors.red} !important;
   margin-bottom: 4px;
   font-weight: 600;
 `;
 
 export const ToggleBoxTextTitle = styled.p`
-  ${commonStyles};
+  ${CommonFont};
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-  color: #141617;
+  color: ${Colors.black};
 `;
 
 export const ToggleBoxTextExplain = styled.p`
-  ${commonStyles};
+  ${CommonFont};
   font-weight: 400;
   font-size: 13px;
   line-height: 21px;
@@ -175,19 +171,19 @@ export const ToggleInnerTextBox = styled.div`
 `;
 
 export const DetailTitleColor = styled.p`
-  ${commonStyles};
+  ${CommonFont};
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: rgb(20, 22, 23) !important;
+  color: ${Colors.black} !important;
 `;
 
 export const DetailTitleExColor = styled.p`
-  ${commonStyles};
+  ${CommonFont};
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-  color: rgb(20, 22, 23);
+  color: ${Colors.black};
 `;
 
 export const ToggleInnerDetailUl = styled.ul`
@@ -196,18 +192,18 @@ export const ToggleInnerDetailUl = styled.ul`
 `;
 
 export const ToggleInnerDetailLi = styled.li`
-  ${commonStyles};
+  ${CommonFont};
   font-weight: 400;
   font-size: 13px;
   line-height: 21px;
   display: flex;
   gap: 4px;
-  color: rgb(129, 137, 143) !important;
+  color: ${Colors.darkGray} !important;
 `;
 
 export const ToggleInnerDetailLine = styled.div`
   width: 100%;
   min-height: 1px;
-  background: rgb(228, 235, 240);
+  background: ${Colors.bottomLine};
   margin-top: 20px;
 `;

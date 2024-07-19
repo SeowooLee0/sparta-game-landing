@@ -36,6 +36,8 @@ export default function ProjectVideoEx() {
                   <S.ViedoDetailSkillImage
                     src={project.detailSkillImage.src}
                     alt={project.detailSkillImage.alt}
+                    // width={ project.}
+                    // height={project.}
                   />
                 </S.VideoDetailInfoDiv>
                 <S.Toggle>

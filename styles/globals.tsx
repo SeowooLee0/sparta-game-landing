@@ -2,7 +2,6 @@
 import { css, Global } from "@emotion/react";
 
 const globalStyles = css`
-  /* Reset CSS */
   html,
   body,
   div,
@@ -112,11 +111,9 @@ const globalStyles = css`
   body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
+     {
+      font-family: "Pretendard", sans-serif;
+      font-style: normal;
   }
 
   a {

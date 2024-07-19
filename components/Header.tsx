@@ -1,7 +1,7 @@
 // components/Header.tsx
-import LogoSVG from "../../public/assets/newLogo.a1d35235.svg";
+import LogoSVG from "../public/assets/newLogo.a1d35235.svg";
 import { useEffect, useState } from "react";
-import * as S from "../style";
+import * as S from "./style";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);

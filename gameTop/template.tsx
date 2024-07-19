@@ -1,5 +1,5 @@
 import * as S from "./style";
-import Header from "./components/Header";
+import Header from "../components/Header";
 import { MobileImage, DesktopImage } from "./style";
 import Slider from "./components/Slider";
 import Info from "./components/Info";

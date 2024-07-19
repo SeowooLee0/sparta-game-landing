@@ -1,7 +1,8 @@
+import * as C from "../copy";
 import { BottomLine, HeaderContainer, HeaderDiv } from "../style";
 import { useState, useEffect } from "react";
 
-const NextDivHeader = () => {
+export default function ProjectHeader() {
   const [isSticky, setIsSticky] = useState(false);
 
   const handleScroll = () => {
@@ -22,28 +23,12 @@ const NextDivHeader = () => {
 
   return (
     <HeaderContainer isSticky={isSticky}>
-      <HeaderDiv>
-        <a>프로젝트</a>
-        <BottomLine />
-      </HeaderDiv>
-      <HeaderDiv>
-        <a>트랙 소개</a>
-        <BottomLine />
-      </HeaderDiv>
-      <HeaderDiv>
-        <a>커리큘럼</a>
-        <BottomLine />
-      </HeaderDiv>
-      <HeaderDiv>
-        <a>취업 서포트</a>
-        <BottomLine />
-      </HeaderDiv>
-      <HeaderDiv>
-        <a>모집 개요</a>
-        <BottomLine />
-      </HeaderDiv>
+      {C.projectHeader.map((item: C.ProjectHeader, index: number) => (
+        <HeaderDiv key={index}>
+          <a>{item.menu}</a>
+          <BottomLine />
+        </HeaderDiv>
+      ))}
     </HeaderContainer>
   );
-};
-
-export default NextDivHeader;
+}
